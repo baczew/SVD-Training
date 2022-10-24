@@ -34,7 +34,7 @@ def approximate_matrix(m, r):
 
 #Trying different approximations
 
-for r in []:#[5, 15, 50, 100, 300]:
+for r in [50, 200]:
     X_approximated = approximate_matrix(X, r)
     plt.imshow(X_approximated, cmap="gray")
     plt.axis("off")
@@ -43,8 +43,6 @@ for r in []:#[5, 15, 50, 100, 300]:
 
 
 #Plotting S values
-
-plt.close()
 
 plt.figure(10)
 plt.title("Classic")
